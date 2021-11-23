@@ -208,6 +208,12 @@ não ser concedido.
 
 # Exercícios OOP
 
+1. Defina uma classe `Ponto` com as propriedades X e Y, dentro de um namespace chamado `Pontos`.
+
+1. Defina uma classe estática `Foo`, que contenha a propriedade Bar, com o valor padrão a string "Foo Bar".
+
+---
+
 1. Implemente a classe `Animal`, que deve conter as propriedades que definem um animal e uma função abstrata Falar e uma função abstrata Comer.
 
 1. Implemente as classes, `Cachorro`, `Gato`, `Pato` e `Humano`, todas herdando da classe base `Animal`.
@@ -266,3 +272,6 @@ não ser concedido.
 
 1. Sobrecarrege o método ToString da classe `Pedido` para retornar em uma string todos os dados do pedido, incluindo os dados das classes internas.
 
+---
+
+1. Defina as classes `Pessoa`, `Cliente`, `Funcionario`, `Cargo`, `Sorteio` e monte uma estrutura que seja possível um funcionario cadastrar um cliente, um funcionario cadastrar um sorteio, um cliente ser cadastrado em um sorteio, um cliente verificar o resultado do sorteio, e sorteio ser realizado, use todas as funcionalidades da OOP necessárias.
