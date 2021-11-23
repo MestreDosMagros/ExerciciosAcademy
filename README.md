@@ -183,3 +183,86 @@ não ser concedido.
 
 1. Escreva um programa que faça a rotação dos valores de um array (circular rotation) por um número determinado de vezes.
  Dado um array de inteiros, precisamos performar uma rotação de valores no mesmo e retorna-lo. Exemplo: [1, 2, 3] -> [3, 1, 2]
+ 
+ ---
+ 
+ # Exercícios Extensões
+
+1. Implemente um método de extensão que aceite um array de inteiros e retorne o maior número dentro deste array.
+
+1. Implemente um método de extensão TrySubstring, que recebe uma string, e faz o Substring de uma string, mas implemente o padrão try-catch para tratar o erro.
+
+1. Implemente um método de extensão que receba uma string e faça o substring da mesma, mesmo que o valor passado esteja fora do tamanho da string, chame-o de SubstringEverything.
+
+1. Implemente um método de extensão que faça a ordenação de um array de inteiros.
+
+1. Implemente um método de extensão que receba uma string e retorne a mesma, com a primeira letra maiúscula, e o resto em caixa baixa.
+
+1. Implemente um método de extensão que receba uma string, e remova todos os ascentos da mesma, se houver, pelo seu caractere equivalente sem acentuação.
+
+1. Implemente um método de extensão que receba uma string e um index, e retorne o char presente no indice informado por parâmetro, tratar o erro caso o indice estiver fora do tamanho da string.
+
+1. Implemente um método de extensão que receba uma string e a retorne ao contrário.
+
+1. Implemente um método de extensão que receba uma lista de inteiros e retorne uma nova lista de string contendo os mesmos valores. Chame-o de ToStringArray.
+
+# Exercícios OOP
+
+1. Implemente a classe `Animal`, que deve conter as propriedades que definem um animal e uma função abstrata Falar e uma função abstrata Comer.
+
+1. Implemente as classes, `Cachorro`, `Gato`, `Pato` e `Humano`, todas herdando da classe base `Animal`.
+
+1. Para cada animal que herde da classe pai `Animal`, descreva um construtor que já inicie as propriedades comuns de acordo com seu tipo.
+
+1. Para cada classe que herde de `Animal`, implemente o método Falar e Comer de acordo com o tipo em questão.
+
+---
+
+1. Defina uma classe `Pessoa` para que contenha as propriedades: Nome, Sobrenome, Idade, Documento.
+
+1. Usando a classe `Pessoa`, crie uma função pública ImprimirNome que imprima o nome completo (nome + sobrenome) da instância criada no console.
+
+1. Usando a classe `Pessoa`, crie um overload do método ImprimirNome, que aceite um parâmetro para informar se o nome deve ser impresso usando Nome + Sobrenome ou Sobrenome + Nome.
+
+1. Usando a classe `Pessoa`, crie uma validação para os setters de Nome e Sobrenome. Os dois devem ter no máximo 35 caracteres cada.
+
+1. Usando a classe `Pessoa`, crie um overload da função ToString() para imrimir todos os campos da instância do objeto.
+
+1. Usando a classe `Pessoa`, crie um método virtual Trabalhar(), e retorne a string "Estou desempregado" quando usado na classe base.
+
+1. Crie as classes `Programador`, `Médico`, `Professor` e use a herança para implementar a classe `Pessoa` como a classe base.
+
+1. Para cada classe mencionada acima, implemente um override do método Trabalhar(), e imprima para cada tipo de pessoa, a descrição do que a pessoa faz no seu trabalho.
+
+1. Implemente a propriedade TemDoutorado na classe base pessoa, e altere a função ImprimirNome para adicionar a string "Dr." antes do nome a ser impresso caso a mesma seja verdadeira.
+
+1. Implemente o override do método Equals() na classe base `Pessoa`, e retorne verdadeiro, caso o nome e sobrenome forem iguais nas duas instâncias de classe.
+
+---
+
+1. Implemente uma classe `Ponto`, que contenha duas propriedades, chamadas X e Y.
+
+1. Para a classe `Ponto` defina um construtor que aceite os valores dos pontos X e Y.
+
+1. Valide, dentro dos getters e setters, que cada ponto X não pode ser menor que 1 e maior que 44 e no ponto Y, os valores podem ser de -13 até 256.
+
+1. Reescreva os operadores == e != da classe `Ponto`, usando seus valores como condicional de igualdade.
+
+1. Reescreva os operadores + e - da classe `Ponto`.
+
+1. Crie uma classe `PontoExtensions` e crie métodos de extensão para copiar os valores em uma nova instância da classe.
+
+1. Usando a classe `PontoExtensions`, crie um método de extensão para fazer o 'swap' dos valores de X e Y na mesma instancia da classe.
+
+---
+
+1. Defina as classes: `Pedido`, `Produto`, `Pagamento`, `CartaoCredito`, `CartaoDebito`, `Boleto`, `Pix`, onde um pedido contenha uma lista de produtos, um cliente e um tipo de pagamento, esse que por sua vez, deve ser a classe base para os tipos `CartaoCredito`, `CartaoDebito`, `Boleto` e `Pix`. Defina as propriedades necessárias para cada classe. A classe `Pagamento` deve ser abstrata e conter uma função chamada Validar, uma propriedade `Valido` e uma enumeração `EFormaPagamento`. Cada tipo de pagamento deve ter as propriedades referentes ao seu tipo e sua validação de acordo. Para toda a forma de pagamento, deve ser criado um construtor que aceite todos os dados necessários para criar um pagamento do seu tipo.
+
+1. Transforme as propriedades dos tipos de pagamento em readonly, sendo que só podem ser iniciadas dentro do construtor do mesmo e não possa ser alterada depois disso.
+
+1. A classe `Pedido` também deve ter um construtor, que recebe obrigatóriamente um cliente, e opcionalmente uma lista de produtos, que quando passada como nula por parâmetro no construtor, é instanciada uma nova lista vazia.
+
+1. Transforme a lista de produtos dentro da classe `Pedido` em readonly, e use um backfield para fazer as operações com a lista. Devem ser criados os métodos AdicionarProduto, RemoveeProduto, para fazer as operações com a lista original.
+
+1. Sobrecarrege o método ToString da classe `Pedido` para retornar em uma string todos os dados do pedido, incluindo os dados das classes internas.
+
