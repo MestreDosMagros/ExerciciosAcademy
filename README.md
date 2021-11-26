@@ -275,3 +275,31 @@ não ser concedido.
 ---
 
 1. Defina as classes `Pessoa`, `Cliente`, `Funcionario`, `Cargo`, `Sorteio` e monte uma estrutura que seja possível um funcionario cadastrar um cliente, um funcionario cadastrar um sorteio, um cliente ser cadastrado em um sorteio, um cliente verificar o resultado do sorteio, e sorteio ser realizado, use todas as funcionalidades da OOP necessárias.
+
+---
+
+## Desafio
+
+1. Crie um sistema de gestão de estacionamentos usando orientação a objetos. O estacionamento deve ser capaz de suportar varios veículos (carro e moto) ao mesmo tempo, e o cálculo de preço deve ser o seguinte: 
+    - Para carros:
+        - Caso o cliente ficou menos de 15 minutos no estacionamento, deve ser cobrado 2 reais;
+        - Caso o cliente passou de 15 minutos no estacionamento, deve ser cobrado 10 reais a hora;
+        - Caso o cliente comprar uma diária, deve ser cobrado o valor de 50 reais;
+        - Caso o cliente comprar uma diária e optar por uma lavagem do veículo também, deve ser cobrado o valor promocional de 65 reais;
+    - Para motos:
+        - Caso o cliente ficou menos de 15 minutos no estacionamento, deve ser cobrado 2 reais;
+        - Caso o cliente passou de 15 minutos no estacionamento, deve ser cobrado 5 reais a hora;
+        - Caso o cliente comprar uma diária, deve ser cobrado o valor de 25 reais;
+        - O serviço de lavagem não é oferecido para motos;
+
+---
+
+1. Crie um sistema orientado a objetos que receba dois arquivos .csv.
+    - Um contendo os campos: Id, Raça, Pesagem, Fator de multiplicação. 
+    - Um contendo os campos: Raça, Preço da arroba.
+
+2. O sistema deve usar esses campos para calcular o preço do animal com base no preço da arroba do segundo arquivo, levando em consideração sua raça, peso e fator de multiplicação do preço (peso do animal * preço da arroba * fator de multiplicação). Após o cálculo, o sistema deve agrupar os animais por raça, e montar um relatório simples (.txt ou .pdf) para cada raça contendo a seguinte estrutura: 
+    - A data de geração do relatório (usar formato DD/MM/YYYY);
+    - O preço da arroba praticado para a raça;
+    - O animal de maior preço encontrado para raça;
+    - A relação de todos os animais da raça ordenados pelo preço decrescente;
